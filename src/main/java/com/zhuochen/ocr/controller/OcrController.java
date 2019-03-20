@@ -22,7 +22,6 @@ public class OcrController {
 
     @PostMapping("/ocr")
     public String ocr(@Valid @NotNull MultipartFile multipartFile) {
-
         return Optional.ofNullable(multipartFile.getOriginalFilename())
                 .map(fileName -> {
 //                    File file = new File(multipartFile.getOriginalFilename());

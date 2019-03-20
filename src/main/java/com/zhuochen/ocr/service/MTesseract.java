@@ -12,7 +12,7 @@ public class MTesseract extends Tesseract {
     @PostConstruct
     protected void init() {
         this.setDatapath("/usr/local/Cellar/tesseract/3.05.02/share/tessdata");
-//        this.setLanguage("chi_sim");
+        this.setLanguage("chi_sim");//TODO
         super.init();
     }
 }
